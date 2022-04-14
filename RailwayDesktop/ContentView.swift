@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                NavigationLink(destination: ProjectsView().background(.white)) {
+                    Label("Projects", systemImage: "book")
+                }
+                Label("Settings", systemImage: "gear")
+            }
+            ProjectsView().background(.white)
+        }
+        .navigationTitle("Railway")
     }
 }
 

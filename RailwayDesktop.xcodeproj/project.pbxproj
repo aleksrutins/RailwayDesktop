@@ -14,6 +14,12 @@
 		3F5E14BA2806EF380087FEA9 /* RailwayDesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14B92806EF380087FEA9 /* RailwayDesktopTests.swift */; };
 		3F5E14C42806EF380087FEA9 /* RailwayDesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14C32806EF380087FEA9 /* RailwayDesktopUITests.swift */; };
 		3F5E14C62806EF380087FEA9 /* RailwayDesktopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14C52806EF380087FEA9 /* RailwayDesktopUITestsLaunchTests.swift */; };
+		3F5E14D32806F0300087FEA9 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14D22806F0300087FEA9 /* ProjectsView.swift */; };
+		3F5E14E22806F46F0087FEA9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14E12806F46F0087FEA9 /* Auth.swift */; };
+		3F5E14E42806F5220087FEA9 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E14E32806F5220087FEA9 /* Randomizer.swift */; };
+		3F7D9AFC28073DE400A58198 /* GQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D9AFB28073DE400A58198 /* GQL.swift */; };
+		3F7D9B00280754F400A58198 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D9AFF280754F400A58198 /* ProjectCardView.swift */; };
+		3F7D9B0628077BB900A58198 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7D9B0528077BB900A58198 /* WrappingHStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,11 @@
 		3F5E14BF2806EF380087FEA9 /* RailwayDesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailwayDesktopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5E14C32806EF380087FEA9 /* RailwayDesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayDesktopUITests.swift; sourceTree = "<group>"; };
 		3F5E14C52806EF380087FEA9 /* RailwayDesktopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayDesktopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F5E14D22806F0300087FEA9 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		3F5E14E12806F46F0087FEA9 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		3F5E14E32806F5220087FEA9 /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		3F7D9AFB28073DE400A58198 /* GQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQL.swift; sourceTree = "<group>"; };
+		3F7D9AFF280754F400A58198 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7D9B0628077BB900A58198 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +107,14 @@
 		3F5E14A62806EF330087FEA9 /* RailwayDesktop */ = {
 			isa = PBXGroup;
 			children = (
+				3F5E14E02806F4570087FEA9 /* Backend */,
 				3F5E14A72806EF330087FEA9 /* RailwayDesktopApp.swift */,
 				3F5E14A92806EF330087FEA9 /* ContentView.swift */,
 				3F5E14AB2806EF380087FEA9 /* Assets.xcassets */,
 				3F5E14B02806EF380087FEA9 /* RailwayDesktop.entitlements */,
 				3F5E14AD2806EF380087FEA9 /* Preview Content */,
+				3F5E14D22806F0300087FEA9 /* ProjectsView.swift */,
+				3F7D9AFF280754F400A58198 /* ProjectCardView.swift */,
 			);
 			path = RailwayDesktop;
 			sourceTree = "<group>";
@@ -129,6 +144,16 @@
 			path = RailwayDesktopUITests;
 			sourceTree = "<group>";
 		};
+		3F5E14E02806F4570087FEA9 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E14E12806F46F0087FEA9 /* Auth.swift */,
+				3F5E14E32806F5220087FEA9 /* Randomizer.swift */,
+				3F7D9AFB28073DE400A58198 /* GQL.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +170,9 @@
 			dependencies = (
 			);
 			name = RailwayDesktop;
+			packageProductDependencies = (
+				3F7D9B0528077BB900A58198 /* WrappingHStack */,
+			);
 			productName = RailwayDesktop;
 			productReference = 3F5E14A42806EF330087FEA9 /* RailwayDesktop.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 3F5E149B2806EF330087FEA9;
+			packageReferences = (
+				3F7D9B0428077BB900A58198 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 3F5E14A52806EF330087FEA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5E14D32806F0300087FEA9 /* ProjectsView.swift in Sources */,
+				3F5E14E42806F5220087FEA9 /* Randomizer.swift in Sources */,
+				3F7D9AFC28073DE400A58198 /* GQL.swift in Sources */,
 				3F5E14AA2806EF330087FEA9 /* ContentView.swift in Sources */,
 				3F5E14A82806EF330087FEA9 /* RailwayDesktopApp.swift in Sources */,
+				3F7D9B00280754F400A58198 /* ProjectCardView.swift in Sources */,
+				3F5E14E22806F46F0087FEA9 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F7D9B0428077BB900A58198 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F7D9B0528077BB900A58198 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F7D9B0428077BB900A58198 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F5E149C2806EF330087FEA9 /* Project object */;
 }
